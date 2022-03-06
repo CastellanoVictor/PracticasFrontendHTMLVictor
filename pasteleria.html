@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelactico</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+   
+    <header>
+        <h1>Bienvenido seas a Pasteláctico</h1>
+        <p>En este menú podrás observar la disponibilidad de los diferentes productos que aquí se ofrecen
+        </p>
+    </header>
+
+    <img src="/Users/victormanuelcastellanoornelas/Downloads/Frontend2/pastelactico.png" alt="Logo Pasteláctico">
+ 
+    <hr>
+
+    <h2>Nuestros pasteles disponibles para venta</h2>
+    <table>
+        <tr>
+            <th>Sabor</th>
+            <th>Pastel Completo</th>
+            <th>Rebanada</th>
+        </tr>
+        <tr>
+            <td>Galactolate (Chocolate)</td>
+            <td>5</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Vía Triláctea (Tres leches)</td>
+            <td>3</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Asteronuez (Nuez)</td>
+            <td>15</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Chocoflan Cósmico</td>
+            <td>3</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Volteado de piña eterea</td>
+            <td>20</td>
+            <td>30</td>
+        </tr>
+        <hr>
+    </table>
+
+    <h2>Adornos para tu pastel!</h2>
+    <p>Se muestra la cantidad de adornos disponibles. </p>
+
+    <ul>
+        <li>Asteriodes (bolitas de menta)            5 </li>
+        <li>Satélites (gomitas de sabores)           5</li>
+        <li>Lunas (Lunetas de chocolate)            10</li>
+        <li>Supernova (recubrimiento de mermelada)  15</li>
+    </ul>
+
+<hr>
+
+    <footer>
+        <p>Dirección: Calle Piedrita #6, Fracc. Andromeda, Estación 1, Luna Terricola, Tierra, Sistema Solar Primario, Galaxia Vía Láctea</p>
+        <p>Horarios de atención: </p>
+        <ul>
+            <li>Lunes a Viernes: Toda la vuelta al sol</li>
+            <li>Sábado: Media vuelta al sol</li>
+            <li>Domingo: Cerrado</li>
+    
+        </ul>
+    </footer>
+</body>
